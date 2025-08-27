@@ -37,6 +37,16 @@ Expected Features
 
 ✅ Market insights
 
+## Overview
+This project is a fixed, robust version of the Financial Document Analyzer originally built with CrewAI. It addresses deterministic bugs, removes unsafe assumptions, and improves prompt clarity.
+
+### What I fixed
+- **Module import resilience**: code no longer crashes if `crewai`/`crewai_tools` are absent.
+- **`TypeError: 'NoneType' object is not subscriptable`**: fixed by safe handling of `document_text` (never sliced when `None`).
+- **Unsafe prompts**: replaced "make up" instructions with structured, factual prompts. Agents now extract and summarize actual content.
+- **File handling & PDF reading**: Added robust PDF/text loaders with helpful fallbacks.
+
+
 Bugs Found & Fixes
 1. Module Import Errors
 
