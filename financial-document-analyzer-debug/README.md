@@ -11,25 +11,6 @@ pip install -r requirements.txt
 2. Run the API
 uvicorn main:app --reload
 
-
-Open http://127.0.0.1:8000/docs
- to interact with the API.
-
-Sample Document
-
-The system analyzes financial documents like Tesla’s Q2 2025 financial update.
-
-Download from: Tesla Q2 2025 Update PDF
-
-Save it as:
-
-data/sample.pdf
-
-
-Or upload any PDF through the API endpoint.
-
-⚠️ Note: data/sample.pdf is currently a placeholder — replace it with the actual Tesla report for testing.
-
 Debugging Instructions
 
 🐛 Debug Mode Activated! — This project initially contained multiple bugs.
@@ -90,7 +71,6 @@ Fix: Rewritten as clear, factual, structured prompts (metrics, risks, insights).
 Setup & Usage
 Run Local Tests
 python main.py
-
 
 This runs a built-in harness that:
 
