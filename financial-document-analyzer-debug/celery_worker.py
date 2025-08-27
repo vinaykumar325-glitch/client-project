@@ -7,3 +7,4 @@ app = Celery('worker', broker='redis://localhost:6379/0', backend='redis://local
 @app.task
 def analyze_async(query: str, file_path: str = None):
     return run_crew(query=query, file_path=file_path)
+# Note: to use Celery you must install Redis and celery and start redis-server.
