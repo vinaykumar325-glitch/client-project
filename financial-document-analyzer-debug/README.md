@@ -134,7 +134,6 @@ Functions: init_db(), save_analysis(query, result)
 
 Final Notes
 
-Tested against TSLA-Q2-2025-Update.pdf.
 
 All deterministic bugs fixed.
 
